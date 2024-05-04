@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import './button.css';
 
 interface ButtonProps {
@@ -27,7 +27,8 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+export const Button: React.FC<ButtonProps> = ({
+// export const Button = ({
   primary = false,
   size = 'medium',
   backgroundColor,

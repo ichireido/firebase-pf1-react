@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 const App: React.FunctionComponent = () => {
+// const App = () => {
   const [count, setCount] = useState(0)
 
   return (

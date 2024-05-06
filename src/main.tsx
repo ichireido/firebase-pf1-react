@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+// import App from './App.tsx'
 import './index.css'
 import { initializeApp } from "firebase/app";
+import Pf1App from './pf1App.tsx';
 
  const firebaseConfig = {
    apiKey: import.meta.env.VITE_API_KEY,
@@ -18,6 +19,6 @@ import { initializeApp } from "firebase/app";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <Pf1App />
   </React.StrictMode>,
 )

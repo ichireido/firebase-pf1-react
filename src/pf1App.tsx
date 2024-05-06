@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react';
 import './pf1App.css';
 import { Link as LinkScroll } from 'react-scroll';
 import Cofee from './assets/coffee.jpg';
@@ -9,7 +9,7 @@ import Kiryu from './assets/kiryu.jpg';
 import Mc1040hw from './assets/mc1040hw.png';
 import OkkParkingres from './assets/okk_parkingres.png';
 
-const pf1App = () => {
+const pf1App: React.FunctionComponent = () => {
   return (
     <div id="wrapper">
       <article id="main">

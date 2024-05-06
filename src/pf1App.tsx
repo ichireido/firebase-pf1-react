@@ -19,7 +19,7 @@ const pf1App: React.FunctionComponent = () => {
               to="top"
               className="nav-link"
               smooth={true}
-              duration={800}
+              duration={850}
             >
               {/* <a id="nav1" className="nav-link" href="#top"> */}
               top
@@ -29,7 +29,7 @@ const pf1App: React.FunctionComponent = () => {
               to="bio"
               className="nav-link"
               smooth={true}
-              duration={800}
+              duration={850}
             >
               {/* <a id="nav1_5" className="nav-link" href="#bio"> */}
               bio
@@ -39,7 +39,7 @@ const pf1App: React.FunctionComponent = () => {
               to="cc"
               className="nav-link"
               smooth={true}
-              duration={800}
+              duration={850}
             >
               {/* <a id="nav2" className="nav-link" href="#cc"> */}
               cc
@@ -49,7 +49,7 @@ const pf1App: React.FunctionComponent = () => {
               to="bike"
               className="nav-link"
               smooth={true}
-              duration={800}
+              duration={850}
             >
               {/* <a id="nav3" className="nav-link" href="#bike"> */}
               bike
@@ -59,7 +59,7 @@ const pf1App: React.FunctionComponent = () => {
               to="petshop"
               className="nav-link"
               smooth={true}
-              duration={800}
+              duration={850}
             >
               {/* <a id="nav4" className="nav-link" href="#petshop"> */}
               petshop
@@ -69,7 +69,7 @@ const pf1App: React.FunctionComponent = () => {
               to="danvc"
               className="nav-link"
               smooth={true}
-              duration={800}
+              duration={850}
             >
               {/* <a id="nav5" className="nav-link" href="#danvc"> */}
               danvc
@@ -79,7 +79,7 @@ const pf1App: React.FunctionComponent = () => {
               to="koiryu"
               className="nav-link"
               smooth={true}
-              duration={800}
+              duration={850}
             >
               {/* <a id="nav6" className="nav-link" href="#koiryu"> */}
               koiryu
@@ -89,7 +89,7 @@ const pf1App: React.FunctionComponent = () => {
               to="miicoro"
               className="nav-link"
               smooth={true}
-              duration={800}
+              duration={850}
             >
               {/* <a id="nav7" className="nav-link" href="#miicoro"> */}
               miicoro
@@ -99,7 +99,7 @@ const pf1App: React.FunctionComponent = () => {
               to="parkingreserve"
               className="nav-link"
               smooth={true}
-              duration={800}
+              duration={850}
             >
               {/* <a id="nav8" className="nav-link" href="#parkingreserve"> */}
               parkingreserve
@@ -121,22 +121,23 @@ const pf1App: React.FunctionComponent = () => {
           <div className="mainblocksection bg-black">
             <section className="biosection">
               <section className="biosections text-white">
-                <h3>【webデザイン　HTMLコーディング　その他】</h3>
+                <h3>【webデザイン HTMLコーディング その他】</h3>
                 <p className="biodate">2004/3~2004/5 (3ヶ月)</p>
                 <li>自社ウェブサイト制作</li>
                 <li>ショッピングカートPerlプログラム設置</li>
                 <li>HTML,CSSコーディング</li>
               </section>
               <section className="biosections text-white">
-                <h3>【webデザイン　HTMLコーディング】</h3>
+                <h3>【webデザイン HTMLコーディング】</h3>
                 <p className="biodate">2010/12~2011/1（２ヶ月）</p>
                 <li>小売業自社ウェブサイトの制作</li>
               </section>
               <section className="biosections text-white">
-                <h3>【webデザイン　HTMLコーディング】</h3>
+                <h3>【webデザイン HTMLコーディング】</h3>
                 <p className="biodate">2011/1〜2011/7（7ヶ月）</p>
                 <li>
-                  他社ウェブサイトのCMSによる構築製作、修正　webデザイン　HTMLコーディング
+                  他社ウェブサイトのCMSによる構築製作、修正 webデザイン
+                  HTMLコーディング
                 </li>
                 <li>サイトテーマのもととなるWebページ作成</li>
                 <li>他社サイトのCMSによる製作</li>
@@ -148,7 +149,7 @@ const pf1App: React.FunctionComponent = () => {
                 </li>
               </section>
               <section className="biosections text-white">
-                <h3>【webデザイン　HTMLコーディング】</h3>
+                <h3>【webデザイン HTMLコーディング】</h3>
                 <p className="biodate">2015/6~2015/９</p>
                 <li>ウェブサイト制作(ベンチャーキャピタル系)</li>
                 <li>レスポンシブサイト、HTML5+CSS3+Jquery</li>
@@ -157,12 +158,12 @@ const pf1App: React.FunctionComponent = () => {
               <section className="biosections text-white">
                 <h3>【HTMLコーディング】</h3>
                 <p className="biodate">2015/10~2015/12</p>
-                <li>生保向け端末更改　担当フェーズ：画面レイアウト</li>
-                <li>HTML5+CSS3+JavaScript(Jquery)　一部SVG</li>
+                <li>生保向け端末更改 担当フェーズ：画面レイアウト</li>
+                <li>HTML5+CSS3+JavaScript(Jquery) 一部SVG</li>
                 <li>コーディング</li>
               </section>
               <section className="biosections text-white">
-                <h3>【画像処理　HTMLコーディング】</h3>
+                <h3>【画像処理 HTMLコーディング】</h3>
                 <p className="biodate">2016/3~2016/5</p>
                 <li>
                   担当フェーズ：キャラクター、パーツ、サイトの画像処理、送信フォーム作成
@@ -173,13 +174,13 @@ const pf1App: React.FunctionComponent = () => {
               <section className="biosections text-white">
                 <h3>【HTMLコーディング】</h3>
                 <p className="biodate">2016/4~2016/11</p>
-                <li>担当フェーズ：画像処理　HTMLコーディング</li>
+                <li>担当フェーズ：画像処理 HTMLコーディング</li>
                 <li>Photoshop Dreamweaver HTML5 CSS3 </li>
               </section>
               <section className="biosections text-white">
                 <h3>【Angularjs開発】</h3>
                 <p className="biodate">2016/12~2017/12</p>
-                <li>担当フェーズ：AngularJS開発　テスト</li>
+                <li>担当フェーズ：AngularJS開発 テスト</li>
                 <li>
                   AngularJS bootstrap Javascript HTML5 CSS3 LESS VSCode
                   Protractor SVN
@@ -188,14 +189,14 @@ const pf1App: React.FunctionComponent = () => {
               <section className="biosections text-white">
                 <h3>【Swift開発 サイト制作】</h3>
                 <p className="biodate">201８/５~201８/７</p>
-                <li>担当フェーズ：iOSアプリ開発　webデザイン　コーディング</li>
+                <li>担当フェーズ：iOSアプリ開発 webデザイン コーディング</li>
                 <li>Swift XCode Git bootstrap Javascript HTML5 CSS3</li>
               </section>
               <section className="biosections text-white">
                 <h3>【交通インフラサイト開発】</h3>
                 <p className="biodate">201８/８~201９/６</p>
                 <li>
-                  担当フェーズ：iUI/UXデザイン 画面設計　コーディング　要件定義
+                  担当フェーズ：iUI/UXデザイン 画面設計 コーディング 要件定義
                 </li>
                 <li>Photoshop Illustlator PowerPoint Javascript HTML5 CSS3</li>
               </section>
@@ -203,7 +204,7 @@ const pf1App: React.FunctionComponent = () => {
                 <h3>【金融系・帳票ペーパーレス開発】</h3>
                 <p className="biodate">2019/9~2020/4</p>
                 <li>
-                  担当フェーズ：コーディング　テスト及びdb上でテスト用データ作成
+                  担当フェーズ：コーディング テスト及びdb上でテスト用データ作成
                 </li>
                 <li>Angular6 Typescript HTML5 SCSS WindowsSQL Git</li>
               </section>
@@ -276,7 +277,7 @@ const pf1App: React.FunctionComponent = () => {
                 <a href="bike/" target="_new">
                   中古バイク引き取りサイト
                 </a>
-                　(選考のため制作物)
+                (選考のため制作物)
               </h3>
               <p>
                 バイク画像、数字の画像、日本地図の画像は、元あったクライアント様のものから使わせていただきました。
@@ -303,7 +304,7 @@ const pf1App: React.FunctionComponent = () => {
                 <a href="petshop/" target="_new">
                   ペットショップサイト
                 </a>
-                　(個人の制作物)
+                (個人の制作物)
               </h3>
               <p>navbarをjavascript(jquery)でレスポンシブ</p>
               <p>足跡の画像は、ネットからひっぱってきた物をillustlatorで加工</p>
@@ -398,8 +399,8 @@ const pf1App: React.FunctionComponent = () => {
                 空港駐車場予約サービス
                 <br /> https://itami.reserve.parkingweb.jp
               </h3>
-              <p>担当フェーズ：UI/UXデザイン　webデザイン　一部コーディング</p>
-              <p>ツール；Photoshop Illustlator　VSCode</p>
+              <p>担当フェーズ：UI/UXデザイン webデザイン 一部コーディング</p>
+              <p>ツール；Photoshop Illustlator VSCode</p>
             </section>
           </div>
         </div>

@@ -244,11 +244,15 @@ const pf1App: React.FunctionComponent = () => {
                 </div> */}
           <div className="mainblocksection bg-white">
             <section className="tilesection appear-totop text-black">
-              <a className="imglink" href="cc/" target="_new">
+              <a
+                className="imglink"
+                href="https://ichireido-pf1-site.web.app/cc/"
+                target="_new"
+              >
                 <img className="site-img" src={Cofee} />
               </a>
               <h3 className="sakuhinh3">
-                <a href="cc/" target="_new">
+                <a href="https://ichireido-pf1-site.web.app/cc/" target="_new">
                   小売サイト（自家焙煎コーヒー）
                 </a>
               </h3>
@@ -270,11 +274,18 @@ const pf1App: React.FunctionComponent = () => {
                 </div> */}
           <div className="mainblocksection">
             <section className="tilesection appear-totop text-white">
-              <a className="imglink" href="bike/" target="_new">
+              <a
+                className="imglink"
+                href="https://ichireido-pf1-site.web.app/bike/"
+                target="_new"
+              >
                 <img className="site-img" src={Bike} />
               </a>
               <h3 className="sakuhinh3">
-                <a href="bike/" target="_new">
+                <a
+                  href="https://ichireido-pf1-site.web.app/bike/"
+                  target="_new"
+                >
                   中古バイク引き取りサイト
                 </a>
                 (選考のため制作物)
@@ -297,11 +308,18 @@ const pf1App: React.FunctionComponent = () => {
         <div id="petshop" className="mainblock sticky performance3">
           <div className="mainblocksection bg-white">
             <section className="tilesection appear-totop text-black">
-              <a className="imglink" href="petshop/" target="_new">
+              <a
+                className="imglink"
+                href="https://ichireido-pf1-site.web.app/petshop/"
+                target="_new"
+              >
                 <img className="site-img" src={Petshop} />
               </a>
               <h3 className="sakuhinh3">
-                <a href="petshop/" target="_new">
+                <a
+                  href="https://ichireido-pf1-site.web.app/petshop/"
+                  target="_new"
+                >
                   ペットショップサイト
                 </a>
                 (個人の制作物)

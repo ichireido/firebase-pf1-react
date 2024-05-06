@@ -892,6 +892,10 @@ section.text-black, section.text-black a{
     font-size: 12px;
 }
 
+.nav-link{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
     .nav{
         margin-left: -50%;

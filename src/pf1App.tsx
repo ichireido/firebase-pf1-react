@@ -9,7 +9,195 @@ import Kiryu from './assets/kiryu.jpg';
 import Mc1040hw from './assets/mc1040hw.png';
 import OkkParkingres from './assets/okk_parkingres.png';
 
+interface work {
+  id: number;
+  title: string;
+  periodStart: string;
+  periodEnd: string;
+  detailList: details[];
+}
+
+interface details {
+  detail: string;
+}
+
+const workExperience: work[] = [
+  {
+    id: 0,
+    title: 'webデザイン HTMLコーディング その他',
+    periodStart: '2004/3',
+    periodEnd: '2004/5',
+    detailList: [
+      { detail: '自社ウェブサイト制作' },
+      { detail: 'ショッピングカートPerlプログラム設置' },
+      { detail: 'HTML,CSSコーディング' },
+    ],
+  },
+  {
+    id: 1,
+    title: 'webデザイン HTMLコーディング',
+    periodStart: '2010/12',
+    periodEnd: '2011/1',
+    detailList: [{ detail: '小売業自社ウェブサイトの制作' }],
+  },
+  {
+    id: 2,
+    title: 'webデザイン HTMLコーディング',
+    periodStart: '2011/1',
+    periodEnd: '2011/7',
+    detailList: [
+      {
+        detail:
+          '他社ウェブサイトのCMSによる構築製作、修正 webデザイン HTMLコーディング',
+      },
+      { detail: 'サイトテーマのもととなるWebページ作成' },
+      { detail: '他社サイトのCMSによる製作' },
+      {
+        detail:
+          'テスト環境をMAC, APACHE, MySQL, PHPにより構築、WORDPRESSでサイト構築し、PHPサイトテーマをコーディング（HTML,CSS,PHP）。<br /> のちに本サーバに移行（移行時にURLが変わるのでMySQLの編集を行う）',
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: 'webデザイン HTMLコーディング',
+    periodStart: '2015/6',
+    periodEnd: '2015/9',
+    detailList: [
+      { detail: 'ウェブサイト制作(ベンチャーキャピタル系)' },
+      { detail: 'レスポンシブサイト、HTML5+CSS3+Jquery' },
+      { detail: 'ウェブデザイン、コーディング' },
+    ],
+  },
+  {
+    id: 4,
+    title: 'HTMLコーディング',
+    periodStart: '2015/10',
+    periodEnd: '2015/12',
+    detailList: [
+      { detail: '生保向け端末更改 担当フェーズ：画面レイアウト' },
+      { detail: 'HTML5+CSS3+JavaScript(Jquery) 一部SVG' },
+      { detail: 'コーディング' },
+    ],
+  },
+  {
+    id: 5,
+    title: '画像処理 HTMLコーディング',
+    periodStart: '2016/3',
+    periodEnd: '2016/5',
+    detailList: [
+      {
+        detail:
+          '担当フェーズ：キャラクター、パーツ、サイトの画像処理、送信フォーム作成',
+      },
+      { detail: 'Photoshop illustlator bootstrap' },
+      { detail: 'コーディング' },
+    ],
+  },
+  {
+    id: 6,
+    title: 'HTMLコーディング',
+    periodStart: '2016/4',
+    periodEnd: '2016/11',
+    detailList: [
+      { detail: '担当フェーズ：画像処理 HTMLコーディング' },
+      { detail: 'Photoshop Dreamweaver HTML5 CSS3' },
+    ],
+  },
+  {
+    id: 7,
+    title: 'AngularJS開発',
+    periodStart: '2016/12',
+    periodEnd: '2017/12',
+    detailList: [
+      { detail: '担当フェーズ：AngularJS開発 テスト' },
+      {
+        detail:
+          'AngularJS bootstrap Javascript HTML5 CSS3 LESS VSCode Protractor SVN',
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: 'Swift開発 サイト制作',
+    periodStart: '2018/5',
+    periodEnd: '2018/7',
+    detailList: [
+      { detail: '担当フェーズ：iOSアプリ開発 webデザイン コーディング' },
+      { detail: 'Swift XCode Git bootstrap Javascript HTML5 CSS3' },
+    ],
+  },
+  {
+    id: 9,
+    title: '交通インフラサイト開発',
+    periodStart: '2018/8',
+    periodEnd: '2019/6',
+    detailList: [
+      { detail: '担当フェーズ：iUI/UXデザイン 画面設計 コーディング 要件定義' },
+      { detail: 'Photoshop Illustlator PowerPoint Javascript HTML5 CSS3' },
+    ],
+  },
+  {
+    id: 10,
+    title: '金融系・帳票ペーパーレス開発',
+    periodStart: '2019/9',
+    periodEnd: '2020/4',
+    detailList: [
+      {
+        detail: '担当フェーズ：コーディング テスト及びdb上でテスト用データ作成',
+      },
+      { detail: 'Angular6 Typescript HTML5 SCSS WindowsSQL Git' },
+    ],
+  },
+  {
+    id: 11,
+    title: '大手外資保険会社・証券読み取りプログラム保守運用',
+    periodStart: '2020/9',
+    periodEnd: '2021/1',
+    detailList: [
+      { detail: '担当フェーズ：クラウドインフラエンジニア' },
+      { detail: 'Angular8 Typescript Django Python Git' },
+    ],
+  },
+  {
+    id: 12,
+    title: 'ソフトウェアエンジニアリング推進',
+    periodStart: '2021/3',
+    periodEnd: '2021/4',
+    detailList: [
+      { detail: '担当フェーズ：ソフトウェアエンジニアリング' },
+      { detail: 'Angular8 Typescript Subversion' },
+    ],
+  },
+  {
+    id: 13,
+    title: 'Angularリファクタリング',
+    periodStart: '2023/12',
+    periodEnd: '2024/3',
+    detailList: [
+      { detail: '担当フェーズ：フロントエンド' },
+      { detail: 'Angular12 Typescript' },
+    ],
+  },
+];
+
 const pf1App: React.FunctionComponent = () => {
+  const works = workExperience.map((val) => {
+    const datailList = val.detailList.map((val) => {
+      return <li>{val.detail}</li>;
+    });
+
+    return (
+      <section className="biosections text-white" key={val.id}>
+        <h3>【{val.title}】</h3>
+        <p className="biodate">
+          {val.periodStart} ~ {val.periodEnd}
+        </p>
+        <ul>{datailList}</ul>
+      </section>
+    );
+  });
+
   return (
     <div id="wrapper">
       <article id="main">
@@ -119,114 +307,7 @@ const pf1App: React.FunctionComponent = () => {
           {/* <div className="navenpty">
                 </div> */}
           <div className="mainblocksection bg-black">
-            <section className="biosection">
-              <section className="biosections text-white">
-                <h3>【webデザイン HTMLコーディング その他】</h3>
-                <p className="biodate">2004/3~2004/5 (3ヶ月)</p>
-                <li>自社ウェブサイト制作</li>
-                <li>ショッピングカートPerlプログラム設置</li>
-                <li>HTML,CSSコーディング</li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【webデザイン HTMLコーディング】</h3>
-                <p className="biodate">2010/12~2011/1（２ヶ月）</p>
-                <li>小売業自社ウェブサイトの制作</li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【webデザイン HTMLコーディング】</h3>
-                <p className="biodate">2011/1〜2011/7（7ヶ月）</p>
-                <li>
-                  他社ウェブサイトのCMSによる構築製作、修正 webデザイン
-                  HTMLコーディング
-                </li>
-                <li>サイトテーマのもととなるWebページ作成</li>
-                <li>他社サイトのCMSによる製作</li>
-                <li>
-                  テスト環境をMAC, APACHE, MySQL,
-                  PHPにより構築、WORDPRESSでサイト構築し、PHPサイトテーマをコーディング（HTML,CSS,PHP）。
-                  <br />
-                  のちに本サーバに移行（移行時にURLが変わるのでMySQLの編集を行う）
-                </li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【webデザイン HTMLコーディング】</h3>
-                <p className="biodate">2015/6~2015/９</p>
-                <li>ウェブサイト制作(ベンチャーキャピタル系)</li>
-                <li>レスポンシブサイト、HTML5+CSS3+Jquery</li>
-                <li>ウェブデザイン、コーディング</li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【HTMLコーディング】</h3>
-                <p className="biodate">2015/10~2015/12</p>
-                <li>生保向け端末更改 担当フェーズ：画面レイアウト</li>
-                <li>HTML5+CSS3+JavaScript(Jquery) 一部SVG</li>
-                <li>コーディング</li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【画像処理 HTMLコーディング】</h3>
-                <p className="biodate">2016/3~2016/5</p>
-                <li>
-                  担当フェーズ：キャラクター、パーツ、サイトの画像処理、送信フォーム作成
-                </li>
-                <li>Photoshop illustlator bootstrap</li>
-                <li>コーディング</li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【HTMLコーディング】</h3>
-                <p className="biodate">2016/4~2016/11</p>
-                <li>担当フェーズ：画像処理 HTMLコーディング</li>
-                <li>Photoshop Dreamweaver HTML5 CSS3 </li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【Angularjs開発】</h3>
-                <p className="biodate">2016/12~2017/12</p>
-                <li>担当フェーズ：AngularJS開発 テスト</li>
-                <li>
-                  AngularJS bootstrap Javascript HTML5 CSS3 LESS VSCode
-                  Protractor SVN
-                </li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【Swift開発 サイト制作】</h3>
-                <p className="biodate">201８/５~201８/７</p>
-                <li>担当フェーズ：iOSアプリ開発 webデザイン コーディング</li>
-                <li>Swift XCode Git bootstrap Javascript HTML5 CSS3</li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【交通インフラサイト開発】</h3>
-                <p className="biodate">201８/８~201９/６</p>
-                <li>
-                  担当フェーズ：iUI/UXデザイン 画面設計 コーディング 要件定義
-                </li>
-                <li>Photoshop Illustlator PowerPoint Javascript HTML5 CSS3</li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【金融系・帳票ペーパーレス開発】</h3>
-                <p className="biodate">2019/9~2020/4</p>
-                <li>
-                  担当フェーズ：コーディング テスト及びdb上でテスト用データ作成
-                </li>
-                <li>Angular6 Typescript HTML5 SCSS WindowsSQL Git</li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【大手外資保険会社・証券読み取りプログラム保守運用】</h3>
-                <p className="biodate">2020/9~2021/1</p>
-                <li>担当フェーズ：クラウドインフラエンジニア</li>
-                <li>Angular8 Typescript Django Python Git</li>
-              </section>
-              <section className="biosections text-white">
-                <h3>【ソフトウェアエンジニアリング推進】</h3>
-                <p className="biodate">2021/3~2021/4</p>
-                <li>担当フェーズ：ソフトウェアエンジニアリング</li>
-                <li>Angular8 Typescript Subversion</li>
-              </section>
-              <section className="biosections text-white">
-                <h3>Angularリファクタリング</h3>
-                <p className="biodate">2023/12~2024/3</p>
-                <li>担当フェーズ：フロントエンド</li>
-                <li>Angular12 Typescript</li>
-              </section>
-            </section>
+            <section className="biosection">{works}</section>
           </div>
         </div>
         <div id="heading1" className="mainblock sticky heading">

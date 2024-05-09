@@ -183,8 +183,8 @@ const workExperience: work[] = [
 
 const pf1App: React.FunctionComponent = () => {
   const works = workExperience.map((val) => {
-    const datailList = val.detailList.map((val) => {
-      return <li>{val.detail}</li>;
+    const datailList = val.detailList.map((val, index) => {
+      return <li key={index}>{val.detail}</li>;
     });
 
     return (

@@ -9,11 +9,29 @@ import Kiryu from './assets/kiryu.jpg';
 import Mc1040hw from './assets/mc1040hw.png';
 import OkkParkingres from './assets/okk_parkingres.png';
 
+// import { getStorage, ref } from 'firebase/storage';
+
+// Get a reference to the storage service, which is used to create references in your storage bucket
+// const storage = getStorage();
+
+// Create a storage reference from our storage service
+// const storageRef = ref(storage);
+
 interface work {
   id: number;
   title: string;
   periodStart: string;
   periodEnd: string;
+  detailList: details[];
+}
+
+interface pf {
+  id: string;
+  bg: string;
+  txt: string;
+  href: string;
+  imgSrc: string;
+  title: string;
   detailList: details[];
 }
 
@@ -181,6 +199,170 @@ const workExperience: work[] = [
   },
 ];
 
+const portfolios: pf[] = [
+  {
+    id: 'cc',
+    bg: 'white',
+    txt: 'black',
+    href: 'https://ichireido-pf1-site.web.app/cc/',
+    imgSrc: Cofee,
+    title: '小売サイト（自家焙煎コーヒー）',
+    detailList: [
+      {
+        detail:
+          'トップ画像は、背景（白）を右上に行くに従い透明になるようにPhotoshopで加工し、CSSで背景を茶色系に指定することで茶色系の背景が左下に行くに従って白くなるように。',
+      },
+      { detail: '中央画像は、左に行くに従い透明になるようPhotoshopで加工。' },
+      {
+        detail:
+          'ナビゲーションバーは、マウスを乗せると字が大きくなるようにCSSで指定し、サイドバーはマウスを乗せると茶色の背景が白くなり、文字の色が黒に反転。',
+      },
+      {
+        detail:
+          'なおかつマウスで押下すると数px右下にずれる、周りの影が反転することで、ボタンが画面の中へ入っていくかのようにみせるようCSSで指定。',
+      },
+    ],
+  },
+  {
+    id: 'bike',
+    bg: 'black',
+    txt: 'white',
+    href: 'https://ichireido-pf1-site.web.app/bike/',
+    imgSrc: Bike,
+    title: '中古バイク引き取りサイト(選考のため制作物)',
+    detailList: [
+      {
+        detail:
+          'バイク画像、数字の画像、日本地図の画像は、元あったクライアント様のものから使わせていただきました。',
+      },
+      { detail: 'トップバナー画像' },
+      {
+        detail:
+          'バイクの画像は、元あったクライアント様のものを加工をPhotoshopで加工。',
+      },
+      {
+        detail: '女性の３D画像は、POSERで制作。ロゴもPhotoshopで作成。',
+      },
+      {
+        detail:
+          'それらをPhotoshop上で配置、テキストを加え一枚のバナーにしました。',
+      },
+      { detail: '入力ボックスはクライアント様のものを使いました。' },
+    ],
+  },
+  {
+    id: 'petshop',
+    bg: 'white',
+    txt: 'black',
+    href: 'https://ichireido-pf1-site.web.app/petshop',
+    imgSrc: Petshop,
+    title: 'ペットショップサイト(個人の制作物)',
+    detailList: [
+      {
+        detail: 'navbarをjavascript(jquery)でレスポンシブ',
+      },
+      {
+        detail: '足跡の画像は、ネットからひっぱってきた物をillustlatorで加工',
+      },
+      {
+        detail: 'また、写真以外の画像はゼロからphotoshopで制作',
+      },
+      {
+        detail:
+          'キャラクターは、illustlatorで制作したオリジナルキャラクターです。',
+      },
+      {
+        detail:
+          'ナビゲーションバーのボタンは、CSS3で画像切り替えで実装、メインコンテンツの『一覧へ』ボタンのデザインと動作はCSS3のみで実装',
+      },
+    ],
+  },
+  {
+    id: 'danvc',
+    bg: 'white',
+    txt: 'black',
+    href: 'https://ichireido-pf1-site.web.app/petshop',
+    imgSrc: Danvc,
+    title: 'ベンチャーキャピタル',
+    detailList: [
+      {
+        detail: '２０１５年６月サイトを制作しました',
+      },
+      {
+        detail:
+          'すでにできているデザインをもとに、デザイン修正及びコーディング',
+      },
+      {
+        detail: 'レスポンシブサイトです。',
+      },
+      {
+        detail:
+          'トップへ戻るボタン、画像のグレイ表示をjavascript(jquery)で実装',
+      },
+      {
+        detail: 'ボタンは、CSS3で画像切り替えで実装',
+      },
+      {
+        detail: 'phpでのフォームメールコーディング',
+      },
+    ],
+  },
+  {
+    id: 'koiryu',
+    bg: '',
+    txt: 'white',
+    href: 'http://frankart.jp/koiryu/',
+    imgSrc: Kiryu,
+    title: 'ゲームアプリ画像処理',
+    detailList: [
+      {
+        detail:
+          '担当フェーズ：キャラクター、パーツ、サイトの画像処理、送信フォーム作成',
+      },
+      {
+        detail:
+          'キャラクター衣装加工、ロゴ加工、セリフ背景加工、サイトの画像処理、送信フォーム作成',
+      },
+    ],
+  },
+  {
+    id: 'miicoro',
+    bg: 'white',
+    txt: 'black',
+    href: 'https://store.line.me/stickershop/product/1476806/ja',
+    imgSrc: Mc1040hw,
+    title: 'LINEスタンプ制作',
+    detailList: [
+      {
+        detail: '担当フェーズ：LINEスタンプみぃころの制作',
+      },
+      {
+        detail: 'ツール；Photoshop Illustlator',
+      },
+    ],
+  },
+  {
+    id: 'parkingreserve',
+    bg: 'black',
+    txt: 'white',
+    href: '',
+    imgSrc: OkkParkingres,
+    title: '空港駐車場予約サービス',
+    detailList: [
+      {
+        detail: 'https://itami.reserve.parkingweb.jp',
+      },
+      {
+        detail: '担当フェーズ：UI/UXデザイン webデザイン 一部コーディング',
+      },
+      {
+        detail: 'ツール；Photoshop Illustlator VSCode',
+      },
+    ],
+  },
+];
+// console.log('storageRef', storageRef);
+
 const pf1App: React.FunctionComponent = () => {
   const works = workExperience.map((val) => {
     const datailList = val.detailList.map((val, index) => {
@@ -195,6 +377,51 @@ const pf1App: React.FunctionComponent = () => {
         </p>
         <ul>{datailList}</ul>
       </section>
+    );
+  });
+
+  const portfolio = portfolios.map((val, index) => {
+    const datailList = val.detailList.map((val, index) => {
+      return <p key={index}>{val.detail}</p>;
+    });
+
+    return (
+      <>
+        <div id={val.id} className={`mainblock sticky performance${index + 1}`}>
+          {/* <div className="navenpty">
+                </div> */}
+          <div className={`mainblocksection bg-${val.bg}`}>
+            <section className={`tilesection appear-totop text-${val.txt}`}>
+              <a className="imglink" href={val.href} target="_new">
+                <img className="site-img" src={val.imgSrc} />
+              </a>
+              <h3 className="sakuhinh3">
+                <a href={val.href} target="_new">
+                  {val.title}
+                </a>
+              </h3>
+              {datailList}
+            </section>
+          </div>
+        </div>
+      </>
+    );
+  });
+
+  const navList = portfolios.map((val) => {
+    return (
+      <>
+        <LinkScroll
+          to={val.id}
+          className="nav-link"
+          smooth={true}
+          duration={850}
+        >
+          {/* <a id="nav1_5" className="nav-link" href="#bio"> */}
+          {val.id}
+          {/* </a> */}
+        </LinkScroll>
+      </>
     );
   });
 
@@ -223,76 +450,7 @@ const pf1App: React.FunctionComponent = () => {
               bio
               {/* </a> */}
             </LinkScroll>
-            <LinkScroll
-              to="cc"
-              className="nav-link"
-              smooth={true}
-              duration={850}
-            >
-              {/* <a id="nav2" className="nav-link" href="#cc"> */}
-              cc
-              {/* </a> */}
-            </LinkScroll>
-            <LinkScroll
-              to="bike"
-              className="nav-link"
-              smooth={true}
-              duration={850}
-            >
-              {/* <a id="nav3" className="nav-link" href="#bike"> */}
-              bike
-              {/* </a> */}
-            </LinkScroll>
-            <LinkScroll
-              to="petshop"
-              className="nav-link"
-              smooth={true}
-              duration={850}
-            >
-              {/* <a id="nav4" className="nav-link" href="#petshop"> */}
-              petshop
-              {/* </a> */}
-            </LinkScroll>
-            <LinkScroll
-              to="danvc"
-              className="nav-link"
-              smooth={true}
-              duration={850}
-            >
-              {/* <a id="nav5" className="nav-link" href="#danvc"> */}
-              danvc
-              {/* </a> */}
-            </LinkScroll>
-            <LinkScroll
-              to="koiryu"
-              className="nav-link"
-              smooth={true}
-              duration={850}
-            >
-              {/* <a id="nav6" className="nav-link" href="#koiryu"> */}
-              koiryu
-              {/* </a> */}
-            </LinkScroll>
-            <LinkScroll
-              to="miicoro"
-              className="nav-link"
-              smooth={true}
-              duration={850}
-            >
-              {/* <a id="nav7" className="nav-link" href="#miicoro"> */}
-              miicoro
-              {/* </a> */}
-            </LinkScroll>
-            <LinkScroll
-              to="parkingreserve"
-              className="nav-link"
-              smooth={true}
-              duration={850}
-            >
-              {/* <a id="nav8" className="nav-link" href="#parkingreserve"> */}
-              parkingreserve
-              {/* </a> */}
-            </LinkScroll>
+            {navList}
           </nav>
         </div>
 
@@ -320,189 +478,7 @@ const pf1App: React.FunctionComponent = () => {
             </h2>
           </section>
         </div>
-        <div id="cc" className="mainblock sticky performance1">
-          {/* <div className="navenpty">
-                </div> */}
-          <div className="mainblocksection bg-white">
-            <section className="tilesection appear-totop text-black">
-              <a
-                className="imglink"
-                href="https://ichireido-pf1-site.web.app/cc/"
-                target="_new"
-              >
-                <img className="site-img" src={Cofee} />
-              </a>
-              <h3 className="sakuhinh3">
-                <a href="https://ichireido-pf1-site.web.app/cc/" target="_new">
-                  小売サイト（自家焙煎コーヒー）
-                </a>
-              </h3>
-              <p>
-                トップ画像は、背景（白）を右上に行くに従い透明になるようにPhotoshopで加工し、CSSで背景を茶色系に指定することで茶色系の背景が左下に行くに従って白くなるように。
-              </p>
-              <p>中央画像は、左に行くに従い透明になるようPhotoshopで加工。</p>
-              <p>
-                ナビゲーションバーは、マウスを乗せると字が大きくなるようにCSSで指定し、サイドバーはマウスを乗せると茶色の背景が白くなり、文字の色が黒に反転。
-              </p>
-              <p>
-                なおかつマウスで押下すると数px右下にずれる、周りの影が反転することで、ボタンが画面の中へ入っていくかのようにみせるようCSSで指定。
-              </p>
-            </section>
-          </div>
-        </div>
-        <div id="bike" className="mainblock sticky performance2">
-          {/* <div className="navenpty">
-                </div> */}
-          <div className="mainblocksection">
-            <section className="tilesection appear-totop text-white">
-              <a
-                className="imglink"
-                href="https://ichireido-pf1-site.web.app/bike/"
-                target="_new"
-              >
-                <img className="site-img" src={Bike} />
-              </a>
-              <h3 className="sakuhinh3">
-                <a
-                  href="https://ichireido-pf1-site.web.app/bike/"
-                  target="_new"
-                >
-                  中古バイク引き取りサイト
-                </a>
-                (選考のため制作物)
-              </h3>
-              <p>
-                バイク画像、数字の画像、日本地図の画像は、元あったクライアント様のものから使わせていただきました。
-              </p>
-              <p>トップバナー画像</p>
-              <p>
-                バイクの画像は、元あったクライアント様のものを加工をPhotoshopで加工。
-              </p>
-              <p>女性の３D画像は、POSERで制作。ロゴもPhotoshopで作成。</p>
-              <p>
-                それらをPhotoshop上で配置、テキストを加え一枚のバナーにしました。
-              </p>
-              <p>入力ボックスはクライアント様のものを使いました。</p>
-            </section>
-          </div>
-        </div>
-        <div id="petshop" className="mainblock sticky performance3">
-          <div className="mainblocksection bg-white">
-            <section className="tilesection appear-totop text-black">
-              <a
-                className="imglink"
-                href="https://ichireido-pf1-site.web.app/petshop/"
-                target="_new"
-              >
-                <img className="site-img" src={Petshop} />
-              </a>
-              <h3 className="sakuhinh3">
-                <a
-                  href="https://ichireido-pf1-site.web.app/petshop/"
-                  target="_new"
-                >
-                  ペットショップサイト
-                </a>
-                (個人の制作物)
-              </h3>
-              <p>navbarをjavascript(jquery)でレスポンシブ</p>
-              <p>足跡の画像は、ネットからひっぱってきた物をillustlatorで加工</p>
-              <p>また、写真以外の画像はゼロからphotoshopで制作</p>
-              <p>
-                キャラクターは、illustlatorで制作したオリジナルキャラクターです。
-              </p>
-              <p>
-                ナビゲーションバーのボタンは、CSS3で画像切り替えで実装、メインコンテンツの『一覧へ』ボタンのデザインと動作はCSS3のみで実装
-              </p>
-            </section>
-          </div>
-        </div>
-        <div id="danvc" className="mainblock sticky performance4">
-          <div className="mainblocksection bg-white">
-            <section className="tilesection-white appear-totop text-black">
-              <a className="imglink" href="http://danvc.com" target="_new">
-                <img className="site-img" src={Danvc} />
-              </a>
-              <h3 className="sakuhinh3">
-                <a href="http://danvc.com" target="_new">
-                  ベンチャーキャピタル
-                </a>
-              </h3>
-              <p>２０１５年６月サイトを制作しました</p>
-              <p>
-                すでにできているデザインをもとに、デザイン修正及びコーディング
-              </p>
-              <p>レスポンシブサイトです。</p>
-              <p>
-                トップへ戻るボタン、画像のグレイ表示をjavascript(jquery)で実装
-              </p>
-              <p>ボタンは、CSS3で画像切り替えで実装</p>
-              <p>phpでのフォームメールコーディング</p>
-            </section>
-          </div>
-        </div>
-        <div id="koiryu" className="mainblock sticky performance5">
-          <div className="mainblocksection">
-            <section className="tilesection appear-totop text-white">
-              <a
-                className="imglink"
-                href="http://frankart.jp/koiryu/"
-                target="_new"
-              >
-                <img className="site-img" src={Kiryu} />
-              </a>
-              <h3 className="sakuhinh3">
-                <a href="http://frankart.jp/koiryu/" target="_new">
-                  ゲームアプリ画像処理
-                </a>
-              </h3>
-              <p>
-                担当フェーズ：キャラクター、パーツ、サイトの画像処理、送信フォーム作成
-              </p>
-              <p>
-                キャラクター衣装加工、ロゴ加工、セリフ背景加工、サイトの画像処理、送信フォーム作成
-              </p>
-            </section>
-          </div>
-        </div>
-        <div id="miicoro" className="mainblock sticky performance6">
-          <div className="mainblocksection bg-white">
-            <section className="tilesection appear-totop text-black">
-              <a
-                className="imglink"
-                href="https://store.line.me/stickershop/product/1476806/ja"
-                target="_new"
-              >
-                <img className="site-img" src={Mc1040hw} />
-              </a>
-              <h3 className="sakuhinh3">
-                <a
-                  href="https://store.line.me/stickershop/product/1476806/ja"
-                  target="_new"
-                >
-                  LINEスタンプ制作
-                </a>
-              </h3>
-              <p>担当フェーズ：LINEスタンプみぃころの制作</p>
-              <p>ツール；Photoshop Illustlator</p>
-            </section>
-          </div>
-        </div>
-        <div id="parkingreserve" className="mainblock sticky performance7">
-          <div className="mainblocksection bg-black">
-            <section className="tilesection appear-totop text-white">
-              <div className="imglink">
-                <img className="site-img" src={OkkParkingres} />
-              </div>
-              <h3 className="sakuhinh3">
-                空港駐車場予約サービス
-                <br /> https://itami.reserve.parkingweb.jp
-              </h3>
-              <p>担当フェーズ：UI/UXデザイン webデザイン 一部コーディング</p>
-              <p>ツール；Photoshop Illustlator VSCode</p>
-            </section>
-          </div>
-        </div>
+        {portfolio}
         <div id="footer" className="mainblock sticky footer">
           <div className="mainblocksection">
             <footer className="appear-totop">

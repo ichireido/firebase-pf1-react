@@ -1,0 +1,162 @@
+[
+    {
+        "id": "cc",
+        "bg": "white",
+        "txt": "black",
+        "href": "https://ichireido-pf1-site.web.app/cc/",
+        "imgSrc": "coffee.jpg",
+        "title": "小売サイト（自家焙煎コーヒー）",
+        "detailList": [
+          {
+            "detail":
+              "トップ画像は、背景（白）を右上に行くに従い透明になるようにPhotoshopで加工し、CSSで背景を茶色系に指定することで茶色系の背景が左下に行くに従って白くなるように。"
+          },
+          { "detail": "中央画像は、左に行くに従い透明になるようPhotoshopで加工。" },
+          {
+            "detail":
+              "ナビゲーションバーは、マウスを乗せると字が大きくなるようにCSSで指定し、サイドバーはマウスを乗せると茶色の背景が白くなり、文字の色が黒に反転。"
+          },
+          {
+            "detail":
+              "なおかつマウスで押下すると数px右下にずれる、周りの影が反転することで、ボタンが画面の中へ入っていくかのようにみせるようCSSで指定。"
+          }
+        ]
+      },
+      {
+        "id": "bike",
+        "bg": "black",
+        "txt": "white",
+        "href": "https://ichireido-pf1-site.web.app/bike/",
+        "imgSrc": "bike.jpg",
+        "title": "中古バイク引き取りサイト(選考のため制作物)",
+        "detailList": [
+          {
+            "detail":
+              "バイク画像、数字の画像、日本地図の画像は、元あったクライアント様のものから使わせていただきました。"
+          },
+          { "detail": "トップバナー画像" },
+          {
+            "detail":
+              "バイクの画像は、元あったクライアント様のものを加工をPhotoshopで加工。"
+          },
+          {
+            "detail": "女性の３D画像は、POSERで制作。ロゴもPhotoshopで作成。"
+          },
+          {
+            "detail":
+              "それらをPhotoshop上で配置、テキストを加え一枚のバナーにしました。"
+          },
+          { "detail": "入力ボックスはクライアント様のものを使いました。" }
+        ]
+      },
+      {
+        "id": "petshop",
+        "bg": "white",
+        "txt": "black",
+        "href": "https://ichireido-pf1-site.web.app/petshop",
+        "imgSrc": "petshop.png",
+        "title": "ペットショップサイト(個人の制作物)",
+        "detailList": [
+          {
+            "detail": "navbarをjavascript(jquery)でレスポンシブ"
+          },
+          {
+            "detail": "足跡の画像は、ネットからひっぱってきた物をillustlatorで加工"
+          },
+          {
+            "detail": "また、写真以外の画像はゼロからphotoshopで制作"
+          },
+          {
+            "detail":
+              "キャラクターは、illustlatorで制作したオリジナルキャラクターです。"
+          },
+          {
+            "detail":
+              "ナビゲーションバーのボタンは、CSS3で画像切り替えで実装、メインコンテンツの『一覧へ』ボタンのデザインと動作はCSS3のみで実装"
+          }
+        ]
+      },
+      {
+        "id": "danvc",
+        "bg": "white",
+        "txt": "black",
+        "href": "https://ichireido-pf1-site.web.app/petshop",
+        "imgSrc": "danvc.png",
+        "title": "ベンチャーキャピタル",
+        "detailList": [
+          {
+            "detail": "２０１５年６月サイトを制作しました"
+          },
+          {
+            "detail":
+              "すでにできているデザインをもとに、デザイン修正及びコーディング"
+          },
+          {
+            "detail": "レスポンシブサイトです。"
+          },
+          {
+            "detail":
+              "トップへ戻るボタン、画像のグレイ表示をjavascript(jquery)で実装"
+          },
+          {
+            "detail": "ボタンは、CSS3で画像切り替えで実装"
+          },
+          {
+            "detail": "phpでのフォームメールコーディング"
+          }
+        ]
+      },
+      {
+        "id": "koiryu",
+        "bg": "",
+        "txt": "white",
+        "href": "http://frankart.jp/koiryu/",
+        "imgSrc": "kiryu.jpg",
+        "title": "ゲームアプリ画像処理",
+        "detailList": [
+          {
+            "detail":
+              "担当フェーズ：キャラクター、パーツ、サイトの画像処理、送信フォーム作成"
+          },
+          {
+            "detail":
+              "キャラクター衣装加工、ロゴ加工、セリフ背景加工、サイトの画像処理、送信フォーム作成"
+          }
+        ]
+      },
+      {
+        "id": "miicoro",
+        "bg": "white",
+        "txt": "black",
+        "href": "https://store.line.me/stickershop/product/1476806/ja",
+        "imgSrc": "mc1040hw.png",
+        "title": "LINEスタンプ制作",
+        "detailList": [
+          {
+            "detail": "担当フェーズ：LINEスタンプみぃころの制作"
+          },
+          {
+            "detail": "ツール；Photoshop Illustlator"
+          }
+        ]
+      },
+      {
+        "id": "parkingreserve",
+        "bg": "black",
+        "txt": "white",
+        "href": "",
+        "imgSrc": "okk_parkingres.png",
+        "title": "空港駐車場予約サービス",
+        "detailList": [
+          {
+            "detail": "https://itami.reserve.parkingweb.jp"
+          },
+          {
+            "detail": "担当フェーズ：UI/UXデザイン webデザイン 一部コーディング"
+          },
+          {
+            "detail": "ツール；Photoshop Illustlator VSCode"
+          }
+        ]
+      }
+]

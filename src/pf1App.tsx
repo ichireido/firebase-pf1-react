@@ -91,13 +91,9 @@ const pf1App: React.FunctionComponent = () => {
         <div className={`mainblocksection bg-${val.bg}`}>
           <section className={`tilesection appear-totop text-${val.txt}`}>
             <a className="imglink" href={val.href} target="_new">
-              <img className="site-img" src={`../src/assets/${val.imgSrc}`} />
+              <img className={`site-img performance${index + 1}`} />
             </a>
-            <h3 className="sakuhinh3">
-              <a href={val.href} target="_new">
-                {val.title}
-              </a>
-            </h3>
+
             {datailList}
           </section>
         </div>

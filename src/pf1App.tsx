@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+// import React from 'react';
 import './pf1App.css';
-import { Link as LinkScroll } from 'react-scroll';
+// import { Link as LinkScroll } from 'react-scroll';
+// import { animateScroll as scroll, scroller } from 'react-scroll';
 // import Cofee from './assets/coffee.jpg';
 // import Bike from './assets/bike.jpg';
 // import Petshop from './assets/petshop.png';
@@ -50,7 +52,7 @@ const pf1App: React.FunctionComponent = () => {
     });
 
     return (
-      <section className="biosections text-white" key={val.id}>
+      <section key={val.id} className="biosections text-white">
         <h3>【{val.title}】</h3>
         <p className="biodate">
           {val.periodStart} ~ {val.periodEnd}
@@ -60,76 +62,147 @@ const pf1App: React.FunctionComponent = () => {
     );
   });
 
-  const portfolio = portfolios.map((val, index) => {
+  const listRef = portfolios.map((val) => {
+    return {
+      ...val,
+      ref: useRef<HTMLDivElement>(null),
+    };
+  });
+
+  const portfolio = listRef.map((val, index) => {
+    // const idRef = useRef<HTMLDivElement>(null);
+    // if (idRef !== null || idRef !== undefined) {
+    //   console.log('idRef-', val, ':', idRef.current?.scrollIntoView());
+    // }
+
     const datailList = val.detailList.map((val, index) => {
       return <p key={index}>{val.detail}</p>;
     });
 
     return (
-      <>
-        <div id={val.id} className={`mainblock sticky performance${index + 1}`}>
-          {/* <div className="navenpty">
+      <div
+        key={val.id}
+        id={val.id}
+        ref={val.ref}
+        className={`mainblock sticky performance${index + 1}`}
+      >
+        {/* <div className="navenpty">
                 </div> */}
-          <div className={`mainblocksection bg-${val.bg}`}>
-            <section className={`tilesection appear-totop text-${val.txt}`}>
-              <a className="imglink" href={val.href} target="_new">
-                <img className="site-img" src={`../src/assets/${val.imgSrc}`} />
+        <div className={`mainblocksection bg-${val.bg}`}>
+          <section className={`tilesection appear-totop text-${val.txt}`}>
+            <a className="imglink" href={val.href} target="_new">
+              <img className="site-img" src={`../src/assets/${val.imgSrc}`} />
+            </a>
+            <h3 className="sakuhinh3">
+              <a href={val.href} target="_new">
+                {val.title}
               </a>
-              <h3 className="sakuhinh3">
-                <a href={val.href} target="_new">
-                  {val.title}
-                </a>
-              </h3>
-              {datailList}
-            </section>
-          </div>
+            </h3>
+            {datailList}
+          </section>
         </div>
-      </>
+      </div>
     );
   });
 
-  const navList = portfolios.map((val) => {
+  const portfolioLink = [
+    {
+      id: 'top',
+      bg: '',
+      txt: '',
+      href: '',
+      imgSrc: '',
+      title: '',
+      detailList: [{ detail: '' }],
+    },
+    {
+      id: 'bio',
+      bg: '',
+      txt: '',
+      href: '',
+      imgSrc: '',
+      title: '',
+      detailList: [{ detail: '' }],
+    },
+  ];
+  portfolioLink.push(...portfolios);
+
+  const linktRef = portfolioLink.map((val) => {
+    return {
+      ...val,
+      ref: useRef<HTMLDivElement | null>(null),
+    };
+  });
+
+  console.log('linktRef', linktRef);
+
+  const handleClick = (ref) => {
+    console.log('linktRef-click', linktRef);
+    useEffect(() => {
+      console.log(ref.current);
+    });
+    if (!ref.current) return;
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+    console.log('linktRef-click-after', linktRef);
+  };
+
+  const navList = linktRef.map((val) => {
+    // const idRef = useRef<HTMLDivElement>(null);
+
     return (
       <>
-        <LinkScroll
+        {/* <LinkScroll
           to={val.id}
           className="nav-link"
           smooth={true}
           duration={850}
+        > */}
+        {/* <a key={val.id} className="nav-link" href={`#${val.id}`}> */}
+        <p
+          key={val.id}
+          className="nav-link"
+          onClick={() => handleClick(val.ref)}
         >
-          {/* <a id="nav1_5" className="nav-link" href="#bio"> */}
           {val.id}
           {/* </a> */}
-        </LinkScroll>
+        </p>
+        {/* </LinkScroll> */}
       </>
     );
   });
+
+  // const scrollToQ = (id: string) => {
+  //   scroller.scrollTo(id, {
+  //     duration: 850,
+  //     smooth: true,
+  //   });
+  // };
 
   return (
     <div id="wrapper">
       <article id="main">
         <div className="nav">
           <nav className="nav-inner">
-            <LinkScroll
+            {/* <LinkScroll
               to="top"
               className="nav-link"
               smooth={true}
               duration={850}
-            >
-              {/* <a id="nav1" className="nav-link" href="#top"> */}
+            > */}
+            {/* <a id="nav1" className="nav-link" href="#top" key="top">
               top
-              {/* </a> */}
-            </LinkScroll>
-            <LinkScroll
+            </a> */}
+            {/* </LinkScroll> */}
+            {/* <LinkScroll
               to="bio"
               className="nav-link"
               smooth={true}
               duration={850}
-            >
-              {/* <a id="nav1_5" className="nav-link" href="#bio"> */}
+            > */}
+            {/* <a id="nav1_5" className="nav-link" href="#bio" key="bio">
               bio
-              {/* </a> */}
-            </LinkScroll>
+            </a> */}
+            {/* </LinkScroll> */}
             {navList}
           </nav>
         </div>

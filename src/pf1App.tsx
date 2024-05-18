@@ -138,9 +138,9 @@ const pf1App: React.FunctionComponent = () => {
 
   const handleClick = (ref) => {
     console.log('linktRef-click', linktRef);
-    useEffect(() => {
-      console.log(ref.current);
-    });
+    // useEffect(() => {
+    //   console.log(ref.current);
+    // });
     if (!ref.current) return;
     ref.current.scrollIntoView({ behavior: 'smooth' });
     console.log('linktRef-click-after', linktRef);

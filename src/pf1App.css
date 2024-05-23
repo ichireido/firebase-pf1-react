@@ -26,6 +26,8 @@ html {
 
   -webkit-text-size-adjust: 100%; /* iOS 8+ */
 
+  scroll-behavior: smooth;
+
 }
 
 
@@ -731,10 +733,10 @@ _:-ms-fullscreen, :root .nav .nav-inner {
     z-index: 5;
 }
 
-.sticky{
+/* .sticky{
     position: sticky;
     z-index: 10;
-}
+} */
 
 .nosticky{
     z-index: 90;
